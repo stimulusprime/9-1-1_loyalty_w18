@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тижневий звіт — W18 · 26.04–02.05.2026 — Програма лояльності 9·1·1</title>
+<meta name="description" content="Тижневий звіт по програмі лояльності за період 26.04–02.05. Ролаут стартував 1 травня.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700;800;900&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --red: #d10024; --red-deep: #a8001b; --red-soft: #fde7eb;
+  --pink: #ffd1dc; --pink-bg: #fff0f3;
+  --ink: #0a0a0a; --ink-soft: #1a1a1a; --charcoal: #2b2b2b; --muted: #6a6a6a;
+  --line: #e4e0d8; --paper: #f5f1e8; --paper-soft: #faf7ee; --soft: #ece8de;
+  --green: #0e6b34; --green-soft: #d6ebde;
+  --amber: #b87010; --amber-soft: #f3e3c8;
+  --blue: #1a4a78; --blue-soft: #d4e1ee;
+  --liquid-glass: 0 1px 0 0 rgba(255,255,255,0.9) inset, 0 -1px 0 0 rgba(255,255,255,0.3) inset, 0 8px 32px rgba(0,0,0,0.08), 0 24px 48px rgba(0,0,0,0.10);
+  --liquid-glass-dark: 0 1px 0 0 rgba(255,255,255,0.15) inset, 0 -1px 0 0 rgba(255,255,255,0.05) inset, 0 8px 32px rgba(0,0,0,0.4), 0 24px 48px rgba(0,0,0,0.3);
+  --elev-1: 0 1px 2px rgba(0,0,0,0.04), 0 2px 6px rgba(0,0,0,0.06);
+  --elev-2: 0 2px 6px rgba(0,0,0,0.05), 0 12px 24px rgba(0,0,0,0.08);
+  --elev-3: 0 4px 12px rgba(0,0,0,0.06), 0 20px 40px rgba(0,0,0,0.10);
+  --elev-4: 0 8px 20px rgba(0,0,0,0.08), 0 32px 64px rgba(0,0,0,0.14);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; }
+body { font-family: 'Raleway', system-ui, sans-serif; font-weight: 500; background: var(--paper); color: var(--ink); line-height: 1.55; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+h1, h2, h3 { font-family: 'Unbounded', system-ui, sans-serif; font-weight: 800; letter-spacing: -0.02em; line-height: 0.98; }
+p { font-weight: 500; }
+a { color: inherit; }
+.container { max-width: 1320px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 2; }
+@media (max-width: 720px) { .container { padding: 0 24px; } }
+
+.progress { position: fixed; top: 0; left: 0; height: 4px; width: 0%; background: linear-gradient(90deg, var(--red), var(--red-deep)); z-index: 100; transition: width 0.1s linear; box-shadow: 0 0 16px rgba(209,0,36,0.6); }
+body::before { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 99; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); opacity: 0.7; mix-blend-mode: multiply; }
+
+nav.top { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: linear-gradient(180deg, rgba(255,255,255,0.6) 0%, rgba(245, 241, 232, 0.4) 100%); backdrop-filter: blur(28px) saturate(1.6); -webkit-backdrop-filter: blur(28px) saturate(1.6); border-bottom: 1px solid rgba(255,255,255,0.5); box-shadow: 0 1px 0 0 rgba(255,255,255,0.8) inset, var(--elev-1); transition: transform 0.4s ease; }
+nav.top.hide { transform: translateY(-100%); }
+.nav-inner { max-width: 1320px; margin: 0 auto; padding: 16px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+@media (max-width: 720px) { .nav-inner { padding: 12px 24px; } }
+.logo { display: inline-flex; align-items: center; gap: 14px; font-family: 'Unbounded'; font-weight: 700; font-size: 16px; color: var(--ink); text-decoration: none; }
+.logo-img { display: inline-flex; align-items: center; justify-content: center; height: 36px; transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.logo-img svg { height: 100%; width: auto; display: block; }
+.logo:hover .logo-img { transform: scale(1.06); }
+.logo-text { font-size: 11px; font-weight: 600; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; font-family: 'Raleway'; border-left: 1px solid var(--line); padding-left: 14px; line-height: 1.3; }
+.nav-period { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.7); padding: 10px 20px; border-radius: 100px; font-size: 13px; font-weight: 600; color: var(--ink); border: 1px solid rgba(255,255,255,0.8); box-shadow: var(--liquid-glass); }
+.nav-period::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--red); animation: pulse 2s ease-in-out infinite; }
+
+.hero { position: relative; min-height: 88vh; padding: 160px 0 80px; display: flex; align-items: center; overflow: hidden; background: radial-gradient(ellipse 60% 70% at 80% 30%, rgba(209,0,36,0.10) 0%, transparent 60%), radial-gradient(ellipse 50% 50% at 10% 80%, rgba(209,0,36,0.06) 0%, transparent 60%), var(--paper); }
+.hero > .container { width: 100%; flex: 1; }
+.hero-grid { position: absolute; inset: 0; background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px); background-size: 100px 100px; mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 30%, transparent 80%); -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 30%, transparent 80%); pointer-events: none; }
+.hero-orb { position: absolute; pointer-events: none; border-radius: 50%; filter: blur(80px); }
+.hero-orb.o1 { width: 600px; height: 600px; background: var(--red); top: -100px; right: -100px; opacity: 0.15; animation: orbDrift 20s ease-in-out infinite; }
+.hero-orb.o2 { width: 500px; height: 500px; background: var(--pink); bottom: -100px; left: -100px; opacity: 0.5; animation: orbDrift 25s ease-in-out infinite reverse; }
+@keyframes orbDrift { 0%, 100% { transform: translate(0,0) scale(1); } 50% { transform: translate(60px,-40px) scale(1.15); } }
+.hero-logo { position: absolute; right: 4%; top: 50%; transform: translateY(-50%); width: clamp(280px, 38vw, 540px); aspect-ratio: 1; filter: drop-shadow(0 32px 64px rgba(209,0,36,0.30)) drop-shadow(0 8px 16px rgba(0,0,0,0.10)); animation: floatLogo 8s ease-in-out infinite; z-index: 1; display: flex; align-items: center; justify-content: center; opacity: 0.92; }
+.hero-logo svg { width: 100%; height: 100%; display: block; }
+@keyframes floatLogo { 0%, 100% { transform: translateY(-50%) rotate(-3deg); } 50% { transform: translateY(-54%) rotate(3deg); } }
+@media (max-width: 1100px) { .hero-logo { right: -10%; opacity: 0.25; width: 70vw; } }
+@media (max-width: 720px) { .hero-logo { right: -25%; top: 75%; width: 80vw; opacity: 0.18; } }
+.hero-tag { display: inline-flex; align-items: center; gap: 10px; padding: 12px 24px; background: linear-gradient(135deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.3) 100%); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); border: 1px solid rgba(255,255,255,0.7); border-radius: 100px; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--charcoal); margin-bottom: 40px; box-shadow: 0 1px 0 0 rgba(255,255,255,0.9) inset, 0 8px 24px rgba(0,0,0,0.06); }
+.hero-tag::before { content: ''; width: 8px; height: 8px; background: var(--red); border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(209,0,36,0.4); } 50% { opacity: 0.7; transform: scale(0.9); box-shadow: 0 0 0 12px rgba(209,0,36,0); } }
+.hero h1 { font-size: clamp(36px, 4.6vw, 64px); margin-bottom: 32px; position: relative; letter-spacing: -0.03em; font-weight: 800; max-width: 920px; }
+@media (max-width: 1100px) { .hero h1 { max-width: 100%; } }
+.hero h1 .accent { color: var(--red); }
+.hero p.lede { font-size: clamp(18px, 1.5vw, 22px); max-width: 640px; color: var(--charcoal); margin-bottom: 40px; font-weight: 500; line-height: 1.5; }
+
+.hero-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; max-width: 920px; }
+@media (max-width: 900px) { .hero-summary { grid-template-columns: repeat(2, 1fr); } }
+.summary-card { background: rgba(255,255,255,0.7); backdrop-filter: blur(20px) saturate(1.4); -webkit-backdrop-filter: blur(20px) saturate(1.4); border: 1px solid rgba(255,255,255,0.8); border-radius: 18px; padding: 22px 20px; box-shadow: var(--liquid-glass); }
+.summary-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 700; margin-bottom: 8px; }
+.summary-value { font-family: 'Unbounded'; font-weight: 800; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; color: var(--ink); margin-bottom: 4px; }
+.summary-delta { font-size: 12px; font-weight: 600; color: var(--green); }
+.summary-delta.neg { color: var(--red); }
+.summary-delta.flat { color: var(--muted); }
+
+section { padding: 120px 0; position: relative; overflow: hidden; }
+section.dark { background: var(--ink); color: #fff; }
+section.dark .eyebrow { color: rgba(255,255,255,0.5); }
+section.dark .eyebrow::before { background: rgba(255,255,255,0.5); }
+section.dark h2 { color: #fff; }
+section.dark .section-lede { color: rgba(255,255,255,0.78); }
+section.cream { background: var(--paper-soft); }
+.eyebrow { display: inline-flex; align-items: center; gap: 14px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 32px; }
+.eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--red); }
+h2 { font-size: clamp(40px, 5.5vw, 80px); margin-bottom: 32px; max-width: 18ch; letter-spacing: -0.03em; }
+h2.tight { max-width: 12ch; }
+.section-lede { font-size: clamp(18px, 1.4vw, 21px); color: var(--charcoal); max-width: 720px; margin-bottom: 64px; line-height: 1.5; font-weight: 500; }
+section.dark .section-lede { color: rgba(255,255,255,0.78); }
+.section-number { position: absolute; right: 40px; top: 60px; font-family: 'Unbounded'; font-weight: 800; font-size: clamp(80px, 10vw, 140px); color: rgba(0,0,0,0.04); letter-spacing: -0.05em; z-index: 0; user-select: none; pointer-events: none; }
+section.dark .section-number { color: rgba(255,255,255,0.05); }
+@media (max-width: 720px) { .section-number { right: 24px; top: 30px; font-size: 90px; } }
+
+.headline-card { background: linear-gradient(135deg, var(--green-soft) 0%, rgba(255,255,255,0.5) 100%); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); border: 1px solid rgba(255,255,255,0.7); border-radius: 20px; padding: 40px 44px; margin-bottom: 56px; box-shadow: var(--liquid-glass); }
+.headline-card .pretitle { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--green); font-weight: 700; margin-bottom: 14px; }
+.headline-card h3 { font-family: 'Unbounded'; font-weight: 700; font-size: 26px; margin-bottom: 16px; color: var(--ink); line-height: 1.2; }
+.headline-card p { font-size: 16px; color: var(--charcoal); line-height: 1.6; font-weight: 500; }
+.headline-card p + p { margin-top: 12px; }
+
+.comp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 24px; }
+@media (max-width: 1000px) { .comp-grid { grid-template-columns: 1fr; } }
+.comp-card { background: rgba(255,255,255,0.85); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); border: 1px solid rgba(255,255,255,0.8); border-radius: 20px; padding: 32px 28px; box-shadow: var(--liquid-glass); position: relative; overflow: hidden; transition: transform 0.4s, box-shadow 0.4s; }
+.comp-card:hover { transform: translateY(-4px); box-shadow: var(--elev-3); }
+.comp-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--red); }
+.comp-card.fc-2::before { background: var(--blue); }
+.comp-card.fc-3::before { background: var(--amber); }
+.comp-eyebrow { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 14px; }
+.comp-card.fc-2 .comp-eyebrow { color: var(--blue); }
+.comp-card.fc-3 .comp-eyebrow { color: var(--amber); }
+.comp-headline { font-family: 'Unbounded'; font-weight: 700; font-size: 16px; line-height: 1.25; color: var(--ink); margin-bottom: 24px; }
+.comp-bars { display: grid; grid-template-columns: 50px 1fr auto; gap: 8px 14px; align-items: center; margin-bottom: 14px; }
+.comp-bars .lbl { font-size: 12px; font-weight: 700; color: var(--muted); }
+.comp-bars .lbl.now { color: var(--ink); }
+.comp-bars .bar-track { background: rgba(0,0,0,0.05); height: 14px; border-radius: 8px; overflow: hidden; }
+.comp-bars .bar-fill { height: 100%; border-radius: 8px; }
+.comp-bars .bar-fill.prev { background: linear-gradient(90deg, #c5cdd6, #a8b3bf); }
+.comp-bars .bar-fill.now { background: linear-gradient(90deg, var(--red), var(--red-deep)); box-shadow: 0 1px 0 0 rgba(255,255,255,0.4) inset; }
+.comp-card.fc-2 .bar-fill.now { background: linear-gradient(90deg, var(--blue), #0f3a60); }
+.comp-card.fc-3 .bar-fill.now { background: linear-gradient(90deg, var(--amber), #8a4f08); }
+.comp-bars .val { font-family: 'Unbounded'; font-weight: 700; font-size: 13px; color: var(--ink); white-space: nowrap; }
+.comp-delta { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--line); display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.comp-delta .delta-label { font-size: 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+.comp-delta .delta-val { font-family: 'Unbounded'; font-weight: 800; font-size: 20px; letter-spacing: -0.02em; }
+.comp-delta .delta-val.up { color: var(--green); }
+.comp-delta .delta-val.down { color: var(--red); }
+.comp-delta .delta-val.flat { color: var(--muted); }
+
+.chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px; }
+@media (max-width: 1000px) { .chart-grid { grid-template-columns: 1fr; } }
+.chart-card { background: rgba(255,255,255,0.85); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); border: 1px solid rgba(255,255,255,0.8); border-radius: 20px; padding: 32px; box-shadow: var(--liquid-glass); }
+.chart-card.full { grid-column: 1 / -1; }
+.chart-card h4 { font-family: 'Unbounded'; font-weight: 700; font-size: 18px; margin-bottom: 8px; line-height: 1.25; }
+.chart-card .chart-sub { font-size: 13px; color: var(--muted); margin-bottom: 24px; font-weight: 500; }
+.chart-svg { width: 100%; height: auto; display: block; }
+.chart-legend { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 16px; font-size: 13px; color: var(--charcoal); }
+.legend-dot { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: middle; }
+.chart-takeaway { margin-top: 20px; padding: 16px 20px; background: var(--green-soft); border-left: 3px solid var(--green); border-radius: 0 8px 8px 0; font-size: 14px; line-height: 1.5; color: var(--charcoal); }
+.chart-takeaway b { color: var(--ink); }
+
+.signals-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+@media (max-width: 900px) { .signals-grid { grid-template-columns: 1fr; } }
+.signal-card { background: rgba(255,255,255,0.85); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); border: 1px solid rgba(255,255,255,0.8); border-radius: 20px; padding: 36px 32px; box-shadow: var(--liquid-glass); position: relative; overflow: hidden; transition: transform 0.4s, box-shadow 0.4s; }
+.signal-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--amber); }
+.signal-card.work::before { background: var(--blue); }
+.signal-card:hover { transform: translateY(-6px); box-shadow: var(--elev-3); }
+.signal-card .signal-eyebrow { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--amber); font-weight: 700; margin-bottom: 14px; }
+.signal-card.work .signal-eyebrow { color: var(--blue); }
+.signal-card h4 { font-family: 'Unbounded'; font-weight: 700; font-size: 18px; margin-bottom: 12px; line-height: 1.25; color: var(--ink); }
+.signal-card p { font-size: 14px; color: var(--charcoal); line-height: 1.6; font-weight: 500; }
+.signal-card p + h4 { margin-top: 22px; }
+.signal-status { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 4px 10px; background: var(--green-soft); color: var(--green); border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+.signal-status::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+.signal-status.live { background: var(--red-soft); color: var(--red); }
+.signal-status.live::before { background: var(--red); animation: pulse 2s ease-in-out infinite; }
+
+.forecast-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 32px; }
+.forecast-grid.forecast-grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 900px; margin-left: auto; margin-right: auto; }
+@media (max-width: 1000px) { .forecast-grid, .forecast-grid.forecast-grid-2 { grid-template-columns: 1fr; } }
+@keyframes iridescentShift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+.forecast-card { background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%); backdrop-filter: blur(20px) saturate(1.5); -webkit-backdrop-filter: blur(20px) saturate(1.5); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 44px 28px; position: relative; overflow: hidden; box-shadow: var(--liquid-glass-dark); transition: transform 0.4s, border-color 0.4s; isolation: isolate; }
+.forecast-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(115deg, rgba(255, 80, 180, 0.30) 0%, rgba(80, 180, 255, 0.30) 25%, rgba(180, 255, 200, 0.30) 50%, rgba(255, 200, 80, 0.30) 75%, rgba(255, 80, 180, 0.30) 100%); background-size: 300% 100%; animation: iridescentShift 14s ease-in-out infinite; z-index: -1; border-radius: inherit; mix-blend-mode: screen; opacity: 0.6; }
+.forecast-card:hover { transform: translateY(-6px); border-color: rgba(255,255,255,0.25); }
+.forecast-card::after { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--amber), #d18b30); border-radius: 20px 20px 0 0; }
+.forecast-card.fc-2::after { background: linear-gradient(90deg, #2a8a4e, var(--green)); }
+.forecast-card.fc-3::after { background: linear-gradient(90deg, var(--blue), #2e6a9e); }
+.forecast-big { font-family: 'Unbounded'; font-weight: 900; font-size: clamp(38px, 4.6vw, 60px); line-height: 0.95; color: var(--amber); margin-bottom: 14px; letter-spacing: -0.04em; display: block; word-break: break-word; }
+.forecast-card.fc-2 .forecast-big { color: #5fce8b; }
+.forecast-card.fc-3 .forecast-big { color: #6cb3e0; }
+.forecast-label { font-size: 14px; color: rgba(255,255,255,0.7); margin-bottom: 18px; font-weight: 500; }
+.forecast-headline { font-family: 'Unbounded'; font-weight: 700; font-size: 18px; color: #fff; margin-bottom: 14px; line-height: 1.2; }
+.forecast-detail { font-size: 14px; color: rgba(255,255,255,0.78); line-height: 1.55; font-weight: 500; }
+
+footer { padding: 48px 0; background: #fff; text-align: center; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); font-weight: 500; }
+footer .logo { justify-content: center; margin-bottom: 14px; }
+footer .sources { font-size: 11px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1); }
+.reveal.in { opacity: 1; transform: translateY(0); }
+.stagger > * { transition-delay: 0s; }
+.stagger.in > *:nth-child(1) { transition-delay: 0.05s; }
+.stagger.in > *:nth-child(2) { transition-delay: 0.15s; }
+.stagger.in > *:nth-child(3) { transition-delay: 0.25s; }
+.stagger.in > *:nth-child(4) { transition-delay: 0.35s; }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } * { animation: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<nav class="top" id="topnav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <span class="logo-img"><svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38.0894 12.226L34.751 15.4732C34.6702 15.7838 35.9832 16.6007 35.961 16.9716L33.5252 22.4905L35.9563 23.4778L39.3057 16.0278C42.9412 35.2012 19.7471 47.5886 5.9136 33.8209C9.36604 30.6688 12.87 27.3708 15.6354 23.5793C17.7638 20.6617 20.0696 16.7608 18.4769 13.0865C16.7361 9.07225 11.8098 9.19507 8.39457 10.8654C4.77414 12.6372 0.231373 18.0912 2.35022 22.2901C4.14816 25.8526 8.89615 25.2465 11.7646 23.4351C12.2971 23.0991 12.7305 22.6458 13.2907 22.3764C10.5507 25.8083 7.47382 28.9596 4.1648 31.8439C-6.57367 17.863 4.87715 -1.88249 22.2963 0.144432C29.4824 0.9804 35.3184 5.70303 38.0886 12.2252L38.0894 12.226ZM25.5379 24.4683L30.316 13.7664L30.2598 13.3987C29.7954 13.1911 28.7606 12.0294 28.3723 11.9328C28.0886 11.8622 24.6837 15.5746 24.1774 16.0048C24.1116 16.2552 24.66 16.5563 24.8176 16.7101C24.9642 16.8527 25.6885 17.5334 25.6782 17.6483L23.1227 23.3685L25.5379 24.4683ZM33.3628 18.527C33.4246 18.42 33.3192 18.3083 33.2709 18.2204C33.1258 17.9589 32.4333 17.0445 32.2217 16.8361C32.1702 16.7853 32.1512 16.6998 32.045 16.7109L30.0965 18.1245C30.0759 18.2608 31.3327 19.8725 31.4444 19.8931L33.3628 18.5262V18.527ZM20.8327 20.8075C20.9072 20.8503 20.9793 20.8123 21.049 20.779C21.1996 20.7077 22.8493 19.4398 22.8684 19.3249L21.5427 17.5492L19.6124 19.046L20.8327 20.8083V20.8075Z" fill="#ED1A3B"/>
+<path d="M5.91382 33.8162C5.1761 33.0817 4.81557 32.6871 4.16422 31.8392C7.47324 28.9542 10.5501 25.8036 13.2902 22.3718C12.73 22.642 12.2965 23.0945 11.764 23.4304C8.89558 25.2418 4.14679 25.8472 2.34965 22.2854C0.230798 18.0866 4.77357 12.6326 8.39479 10.8616C11.81 9.19124 16.7371 9.06843 18.4772 13.0827C20.0699 16.757 17.764 20.6579 15.6356 23.5754C12.8702 27.3662 9.36547 30.6641 5.91382 33.817V33.8162ZM12.4399 12.3957C9.64122 12.6112 6.93521 14.5969 5.50177 16.9416C2.49545 21.8615 6.52475 23.7315 10.577 21.1032C11.9629 20.2038 13.0279 18.8996 13.9502 17.5501C14.203 17.4749 15.2363 18.2641 15.5723 18.3497C15.6713 18.375 15.6848 18.3956 15.764 18.3061C15.8377 18.2229 16.096 17.4828 16.1452 17.3164C17.0215 14.3481 15.6483 12.1484 12.4399 12.3957Z" fill="#FFFDFD"/>
+<path d="M39.3039 16.0284L35.9545 23.4785L33.5234 22.4911L35.9592 16.9722C35.9806 16.6013 34.6676 15.7836 34.7493 15.4738L38.0876 12.2266C38.6629 13.5815 39.021 14.5316 39.3047 16.0284H39.3039Z" fill="#FFFDFD"/>
+<path d="M25.5363 24.4701L23.1211 23.3703L25.6766 17.6501C25.6876 17.5352 24.9634 16.8545 24.816 16.7119C24.6583 16.5582 24.11 16.2571 24.1758 16.0067C24.6821 15.5756 28.087 11.8641 28.3707 11.9346C28.7597 12.0313 29.7938 13.1929 30.2581 13.4005L30.3144 13.7682L25.5363 24.4701Z" fill="#FFFDFD"/>
+<path d="M20.8336 20.8099L19.6133 19.0476L21.5435 17.5508L22.8692 19.3265C22.8502 19.4414 21.2004 20.7092 21.0499 20.7805C20.9802 20.8138 20.908 20.8519 20.8336 20.8091V20.8099Z" fill="#FBFBFB"/>
+<path d="M33.368 18.5273L31.4497 19.8941C31.3379 19.8728 30.0812 18.2618 30.1018 18.1255L32.0503 16.7119C32.1565 16.7008 32.1755 16.7864 32.227 16.8371C32.4378 17.0455 33.1303 17.9599 33.2761 18.2214C33.3253 18.3094 33.4298 18.4211 33.368 18.5281V18.5273Z" fill="#FBFBFB"/>
+<path d="M12.4372 12.4018C15.6456 12.1545 17.0188 14.3542 16.1424 17.3225C16.0933 17.4889 15.835 18.229 15.7613 18.3122C15.682 18.4017 15.6686 18.3811 15.5695 18.3558C15.2335 18.2702 14.2003 17.481 13.9475 17.5562C13.0243 18.9057 11.9602 20.2099 10.5743 21.1093C6.522 23.7384 2.49269 21.8676 5.49902 16.9477C6.93245 14.6022 9.63846 12.6173 12.4372 12.4018Z" fill="#ED1A3B"/>
+<path d="M53.5492 18.245H56.9829V17.5532C56.9829 17.0663 56.7523 16.6563 56.3167 16.2976C55.8554 15.9388 55.3173 15.7595 54.6511 15.7595C54.0105 15.7595 53.4724 15.9388 53.0368 16.2463C52.6011 16.5794 52.3705 16.9894 52.3449 17.4507H49.3468C49.4493 16.1182 50.0387 14.9907 51.0637 14.1195C52.0886 13.2483 53.3699 12.8127 54.9073 12.8127C56.4448 12.8127 57.7004 13.2739 58.7254 14.1451C59.7503 15.0164 60.2628 16.1438 60.2628 17.4763V22.5243C60.2628 22.8062 60.3397 23.0368 60.5191 23.2162C60.6728 23.4212 60.9034 23.498 61.1597 23.498C61.3647 23.498 61.5697 23.4468 61.8003 23.293V25.548C61.2366 25.9067 60.5959 26.0861 59.8785 26.0861C58.6485 26.0861 57.7773 25.5992 57.2904 24.6255C56.291 25.6505 55.0098 26.163 53.4467 26.163C52.1143 26.163 51.0124 25.8042 50.1412 25.0355C49.27 24.2668 48.8344 23.293 48.8344 22.0631C48.8344 20.8843 49.2443 19.9619 50.0899 19.27C50.9356 18.6038 52.0886 18.245 53.5492 18.245ZM52.1143 21.9349C52.1143 22.3193 52.268 22.6268 52.6268 22.883C52.9599 23.1393 53.3955 23.2418 53.9592 23.2418C54.728 23.2418 55.4198 23.0112 56.0348 22.4987C56.6498 22.0118 56.9573 21.3968 56.9829 20.6537H54.1386C53.5236 20.6537 53.0368 20.7818 52.678 21.0125C52.2936 21.2431 52.1143 21.5506 52.1143 21.9349ZM63.9167 13.1202H75.8064V25.8555H72.5265V15.7082H67.1966V25.8555H63.9167V13.1202ZM89.6634 15.7082H85.4354V25.8555H82.1555V15.7082H77.9531V13.1202H89.6634V15.7082ZM97.3585 12.8127C99.0754 12.8127 100.485 13.3508 101.587 14.427C102.663 15.5032 103.227 16.8613 103.227 18.5013C103.227 19.1675 103.098 19.8594 102.842 20.5256H94.1299C94.3092 21.3712 94.6936 22.0374 95.3086 22.5243C95.8979 23.0368 96.6667 23.2674 97.5891 23.2674C98.3579 23.2674 98.9985 23.1137 99.511 22.7549C100.023 22.4218 100.305 21.9862 100.357 21.4737H103.278C103.15 22.8318 102.535 23.9336 101.407 24.8049C100.28 25.6761 98.896 26.1117 97.2816 26.1117C95.3598 26.1117 93.7967 25.4967 92.618 24.2411C91.4393 23.0112 90.8499 21.4225 90.8499 19.5006C90.8499 17.5532 91.4649 15.9645 92.6949 14.7089C93.9249 13.4533 95.4623 12.8127 97.3585 12.8127ZM94.258 18.0144H100.203C100.049 17.2969 99.7416 16.7332 99.2547 16.2976C98.7422 15.862 98.1273 15.6313 97.3841 15.6313C96.6154 15.6313 95.9748 15.862 95.4367 16.2719C94.873 16.7076 94.4886 17.2969 94.258 18.0144ZM105.88 13.1202H109.16V18.04H110.057C110.672 18.04 111.133 17.7838 111.441 17.2457L113.132 14.6576C113.747 13.5558 114.67 12.992 115.9 12.992H117.283V15.5801H117.181C116.515 15.5801 116.028 15.862 115.72 16.4001L113.85 19.2956L116.053 22.5755C116.361 23.1393 116.848 23.3955 117.514 23.3955H117.591V25.9836H116.31C115.72 25.9836 115.182 25.8555 114.67 25.548C114.157 25.2661 113.747 24.8561 113.465 24.3436L111.441 21.4481C111.082 20.91 110.621 20.6281 110.006 20.6281H109.16V25.8555H105.88V13.1202ZM124.016 18.245H127.45V17.5532C127.45 17.0663 127.219 16.6563 126.784 16.2976C126.322 15.9388 125.784 15.7595 125.118 15.7595C124.478 15.7595 123.939 15.9388 123.504 16.2463C123.068 16.5794 122.838 16.9894 122.812 17.4507H119.814C119.916 16.1182 120.506 14.9907 121.531 14.1195C122.556 13.2483 123.837 12.8127 125.374 12.8127C126.912 12.8127 128.167 13.2739 129.192 14.1451C130.217 15.0164 130.73 16.1438 130.73 17.4763V22.5243C130.73 22.8062 130.807 23.0368 130.986 23.2162C131.14 23.4212 131.37 23.498 131.627 23.498C131.832 23.498 132.037 23.4468 132.267 23.293V25.548C131.704 25.9067 131.063 26.0861 130.346 26.0861C129.116 26.0861 128.244 25.5992 127.757 24.6255C126.758 25.6505 125.477 26.163 123.914 26.163C122.581 26.163 121.479 25.8042 120.608 25.0355C119.737 24.2668 119.301 23.293 119.301 22.0631C119.301 20.8843 119.711 19.9619 120.557 19.27C121.403 18.6038 122.556 18.245 124.016 18.245ZM122.581 21.9349C122.581 22.3193 122.735 22.6268 123.094 22.883C123.427 23.1393 123.863 23.2418 124.426 23.2418C125.195 23.2418 125.887 23.0112 126.502 22.4987C127.117 22.0118 127.424 21.3968 127.45 20.6537H124.606C123.991 20.6537 123.504 20.7818 123.145 21.0125C122.761 21.2431 122.581 21.5506 122.581 21.9349Z" fill="black"/>
+</svg></span>
+      <span class="logo-text">Тижневий звіт<br>програма лояльності</span>
+    </a>
+    <span class="nav-period">W18 · 26.04 → 02.05</span>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-grid"></div>
+  <div class="hero-orb o1"></div>
+  <div class="hero-orb o2"></div>
+  <div class="hero-logo"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M38.0894 12.226L34.751 15.4732C34.6702 15.7838 35.9832 16.6007 35.961 16.9716L33.5252 22.4905L35.9563 23.4778L39.3057 16.0278C42.9412 35.2012 19.7471 47.5886 5.9136 33.8209C9.36604 30.6688 12.87 27.3708 15.6354 23.5793C17.7638 20.6617 20.0696 16.7608 18.4769 13.0865C16.7361 9.07225 11.8098 9.19507 8.39457 10.8654C4.77414 12.6372 0.231373 18.0912 2.35022 22.2901C4.14816 25.8526 8.89615 25.2465 11.7646 23.4351C12.2971 23.0991 12.7305 22.6458 13.2907 22.3764C10.5507 25.8083 7.47382 28.9596 4.1648 31.8439C-6.57367 17.863 4.87715 -1.88249 22.2963 0.144432C29.4824 0.9804 35.3184 5.70303 38.0886 12.2252L38.0894 12.226ZM25.5379 24.4683L30.316 13.7664L30.2598 13.3987C29.7954 13.1911 28.7606 12.0294 28.3723 11.9328C28.0886 11.8622 24.6837 15.5746 24.1774 16.0048C24.1116 16.2552 24.66 16.5563 24.8176 16.7101C24.9642 16.8527 25.6885 17.5334 25.6782 17.6483L23.1227 23.3685L25.5379 24.4683ZM33.3628 18.527C33.4246 18.42 33.3192 18.3083 33.2709 18.2204C33.1258 17.9589 32.4333 17.0445 32.2217 16.8361C32.1702 16.7853 32.1512 16.6998 32.045 16.7109L30.0965 18.1245C30.0759 18.2608 31.3327 19.8725 31.4444 19.8931L33.3628 18.5262V18.527ZM20.8327 20.8075C20.9072 20.8503 20.9793 20.8123 21.049 20.779C21.1996 20.7077 22.8493 19.4398 22.8684 19.3249L21.5427 17.5492L19.6124 19.046L20.8327 20.8083V20.8075Z" fill="#ED1A3B"/><path d="M5.91382 33.8162C5.1761 33.0817 4.81557 32.6871 4.16422 31.8392C7.47324 28.9542 10.5501 25.8036 13.2902 22.3718C12.73 22.642 12.2965 23.0945 11.764 23.4304C8.89558 25.2418 4.14679 25.8472 2.34965 22.2854C0.230798 18.0866 4.77357 12.6326 8.39479 10.8616C11.81 9.19124 16.7371 9.06843 18.4772 13.0827C20.0699 16.757 17.764 20.6579 15.6356 23.5754C12.8702 27.3662 9.36547 30.6641 5.91382 33.817V33.8162ZM12.4399 12.3957C9.64122 12.6112 6.93521 14.5969 5.50177 16.9416C2.49545 21.8615 6.52475 23.7315 10.577 21.1032C11.9629 20.2038 13.0279 18.8996 13.9502 17.5501C14.203 17.4749 15.2363 18.2641 15.5723 18.3497C15.6713 18.375 15.6848 18.3956 15.764 18.3061C15.8377 18.2229 16.096 17.4828 16.1452 17.3164C17.0215 14.3481 15.6483 12.1484 12.4399 12.3957Z" fill="#FFFDFD"/><path d="M39.3039 16.0284L35.9545 23.4785L33.5234 22.4911L35.9592 16.9722C35.9806 16.6013 34.6676 15.7836 34.7493 15.4738L38.0876 12.2266C38.6629 13.5815 39.021 14.5316 39.3047 16.0284H39.3039Z" fill="#FFFDFD"/><path d="M25.5363 24.4701L23.1211 23.3703L25.6766 17.6501C25.6876 17.5352 24.9634 16.8545 24.816 16.7119C24.6583 16.5582 24.11 16.2571 24.1758 16.0067C24.6821 15.5756 28.087 11.8641 28.3707 11.9346C28.7597 12.0313 29.7938 13.1929 30.2581 13.4005L30.3144 13.7682L25.5363 24.4701Z" fill="#FFFDFD"/><path d="M20.8336 20.8099L19.6133 19.0476L21.5435 17.5508L22.8692 19.3265C22.8502 19.4414 21.2004 20.7092 21.0499 20.7805C20.9802 20.8138 20.908 20.8519 20.8336 20.8091V20.8099Z" fill="#FBFBFB"/><path d="M33.368 18.5273L31.4497 19.8941C31.3379 19.8728 30.0812 18.2618 30.1018 18.1255L32.0503 16.7119C32.1565 16.7008 32.1755 16.7864 32.227 16.8371C32.4378 17.0455 33.1303 17.9599 33.2761 18.2214C33.3253 18.3094 33.4298 18.4211 33.368 18.5281V18.5273Z" fill="#FBFBFB"/><path d="M12.4372 12.4018C15.6456 12.1545 17.0188 14.3542 16.1424 17.3225C16.0933 17.4889 15.835 18.229 15.7613 18.3122C15.682 18.4017 15.6686 18.3811 15.5695 18.3558C15.2335 18.2702 14.2003 17.481 13.9475 17.5562C13.0243 18.9057 11.9602 20.2099 10.5743 21.1093C6.522 23.7384 2.49269 21.8676 5.49902 16.9477C6.93245 14.6022 9.63846 12.6173 12.4372 12.4018Z" fill="#ED1A3B"/></svg></div>
+  <div class="container">
+    <span class="hero-tag">W18 · 26.04 — 02.05.2026</span>
+    <h1>Програма лояльності — <span class="accent">стабільно здоровий</span> режим, запустили списки на підвищене списання</h1>
+    <p class="lede">Тижневий зріз стану ПЛ за 26 квітня — 2 травня. З 1 травня (п'ятниця) у роботі — затверджений список 346 SKU на підвищене списання та нарахування.</p>
+
+    <div class="hero-summary">
+      <div class="summary-card">
+        <div class="summary-label">Burn ratio</div>
+        <div class="summary-value">1.228</div>
+        <div class="summary-delta flat">flat WoW · 9-й тиждень &gt;1</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Чистий потік</div>
+        <div class="summary-value">−869К ₴</div>
+        <div class="summary-delta">9-й тиждень &lt; 0</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Пенетрація ПЛ</div>
+        <div class="summary-value">49.96%</div>
+        <div class="summary-delta neg">−0.7 п.п. до W17</div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-label">Бонусний баланс</div>
+        <div class="summary-value">306.0М ₴</div>
+        <div class="summary-delta">10.86М карток · 28 ₴/картка</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="overview" class="cream">
+  <div class="section-number">01</div>
+  <div class="container">
+    <span class="eyebrow reveal">Головне за тиждень</span>
+    <h2 class="reveal">Без сюрпризів, у плановому режимі</h2>
+
+    <div class="headline-card reveal">
+      <div class="pretitle">Підсумок</div>
+      <h3>Програма продовжує працювати в стабільно здоровому режимі</h3>
+      <p>За W18 (26.04–02.05) бонусна економіка показала фактично ідентичні до W17 цифри: нараховано ₴3.80М (−1.1% WoW), списано ₴4.67М (−1.1%), burn ratio 1.228 — не зрушив. Чистий потік −869 тис. ₴ — дев'ятий тиждень поспіль мережа списує більше, ніж нараховує, накопичене до 23.02 бонусне зобов'язання продовжує скорочуватись.</p>
+      <p><b>З 1 травня (п'ятниця) запущено затверджений список 346 SKU</b> на підвищене списання (147 SKU на 100% / 92 на 30% / 83 на 15%) та нарахування (24 SKU на +10%). Сьогодні (03.05) стартує комунікаційна підтримка — розсилка по базі клієнтів. Впливу на тижневі метрики очікуємо у W19–W20, моніторинг ключових показників розпочинаємо з наступного тижня.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kpi">
+  <div class="section-number">02</div>
+  <div class="container">
+    <span class="eyebrow reveal">W18 vs W17</span>
+    <h2 class="reveal">Тиждень-до-тижня</h2>
+    <p class="section-lede reveal">Повні 7-денні тижні (Нд–Сб). Сірий — W17 (попередній), кольоровий — W18 (поточний).</p>
+
+    <div class="comp-grid stagger">
+      <div class="comp-card reveal">
+        <div class="comp-eyebrow">Бонусна економіка</div>
+        <div class="comp-headline">Burn ratio тримається, нарахування і списання трохи нижчі</div>
+        <div class="comp-bars">
+          <div class="lbl">W17</div>
+          <div class="bar-track"><div class="bar-fill prev" style="width: 75.5%"></div></div>
+          <div class="val">3.84М ₴ нар.</div>
+          <div class="lbl now">W18</div>
+          <div class="bar-track"><div class="bar-fill now" style="width: 74.6%"></div></div>
+          <div class="val">3.80М ₴ нар.</div>
+          <div class="lbl">W17</div>
+          <div class="bar-track"><div class="bar-fill prev" style="width: 92.7%"></div></div>
+          <div class="val">4.72М ₴ спис.</div>
+          <div class="lbl now">W18</div>
+          <div class="bar-track"><div class="bar-fill now" style="width: 91.7%"></div></div>
+          <div class="val">4.67М ₴ спис.</div>
+        </div>
+        <div class="comp-delta">
+          <span class="delta-label">Burn W17 → W18</span>
+          <span class="delta-val flat">1.228 → 1.228</span>
+        </div>
+      </div>
+
+      <div class="comp-card fc-2 reveal">
+        <div class="comp-eyebrow">Товарообіг</div>
+        <div class="comp-headline">Загальний +0.8%, лояльний просів на 0.6%</div>
+        <div class="comp-bars">
+          <div class="lbl">W17</div>
+          <div class="bar-track"><div class="bar-fill prev" style="width: 99.2%"></div></div>
+          <div class="val">604.1 М ₴</div>
+          <div class="lbl now">W18</div>
+          <div class="bar-track"><div class="bar-fill now" style="width: 100%"></div></div>
+          <div class="val">608.8 М ₴</div>
+          <div class="lbl">W17</div>
+          <div class="bar-track"><div class="bar-fill prev" style="width: 50.3%"></div></div>
+          <div class="val">306.0 М ₴ лоял.</div>
+          <div class="lbl now">W18</div>
+          <div class="bar-track"><div class="bar-fill now" style="width: 49.9%"></div></div>
+          <div class="val">304.1 М ₴ лоял.</div>
+        </div>
+        <div class="comp-delta">
+          <span class="delta-label">Пенетрація</span>
+          <span class="delta-val down">50.65% → 49.96%</span>
+        </div>
+      </div>
+
+      <div class="comp-card fc-3 reveal">
+        <div class="comp-eyebrow">Клієнти</div>
+        <div class="comp-headline">Активна база стабілізувалась, нові картки додають темп</div>
+        <div class="comp-bars">
+          <div class="lbl">W17</div>
+          <div class="bar-track"><div class="bar-fill prev" style="width: 99.98%"></div></div>
+          <div class="val">1.728М актив.</div>
+          <div class="lbl now">W18</div>
+          <div class="bar-track"><div class="bar-fill now" style="width: 100%"></div></div>
+          <div class="val">1.729М актив.</div>
+          <div class="lbl">W17</div>
+          <div class="bar-track"><div class="bar-fill prev" style="width: 98.8%"></div></div>
+          <div class="val">31.8К нових</div>
+          <div class="lbl now">W18</div>
+          <div class="bar-track"><div class="bar-fill now" style="width: 100%"></div></div>
+          <div class="val">32.2К нових</div>
+        </div>
+        <div class="comp-delta">
+          <span class="delta-label">Нові картки</span>
+          <span class="delta-val up">+1.2%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="daily" class="cream">
+  <div class="section-number">03</div>
+  <div class="container">
+    <span class="eyebrow reveal">Денна динаміка W18</span>
+    <h2 class="reveal">Денний профіль тижня</h2>
+    <p class="section-lede reveal">Денні дані тижня поряд із тими ж днями W17 — як baseline перед ролаутом. Це опорна картка, на яку накладатимемо динаміку наступних тижнів.</p>
+
+    <div class="chart-grid">
+      <div class="chart-card full reveal">
+        <h4>Burn ratio по днях: W18 vs W17</h4>
+        <div class="chart-sub">Денний коридор 1.20–1.33 з нормальною варіативністю по днях тижня.</div>
+        <svg class="chart-svg" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+          <defs><pattern id="gd" width="100" height="40" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 40" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="1"/></pattern></defs>
+          <rect x="60" y="20" width="1120" height="240" fill="url(#gd)"/>
+          <g font-family="Raleway" font-size="11" fill="#6a6a6a">
+            <text x="55" y="25" text-anchor="end">1.40</text>
+            <text x="55" y="73" text-anchor="end">1.30</text>
+            <text x="55" y="121" text-anchor="end">1.20</text>
+            <text x="55" y="169" text-anchor="end">1.10</text>
+            <text x="55" y="217" text-anchor="end">1.00</text>
+            <text x="55" y="265" text-anchor="end">0.90</text>
+          </g>
+          <line x1="60" y1="217" x2="1180" y2="217" stroke="#0a0a0a" stroke-width="1" stroke-dasharray="3,3"/>
+          <polyline points="140,74 300,120 460,110 620,119 780,113 940,111 1100,91" fill="none" stroke="#a8b3bf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="#a8b3bf">
+            <circle cx="140" cy="74" r="5"/><circle cx="300" cy="120" r="5"/><circle cx="460" cy="110" r="5"/>
+            <circle cx="620" cy="119" r="5"/><circle cx="780" cy="113" r="5"/><circle cx="940" cy="111" r="5"/><circle cx="1100" cy="91" r="5"/>
+          </g>
+          <polyline points="140,67 300,110 460,123 620,100 780,59 940,139 1100,141" fill="none" stroke="#d10024" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="#d10024">
+            <circle cx="140" cy="67" r="6"/><circle cx="300" cy="110" r="6"/><circle cx="460" cy="123" r="6"/>
+            <circle cx="620" cy="100" r="6"/><circle cx="780" cy="59" r="6"/>
+            <circle cx="940" cy="139" r="8" stroke="#fff" stroke-width="2"/>
+            <circle cx="1100" cy="141" r="8" stroke="#fff" stroke-width="2"/>
+          </g>
+          <line x1="860" y1="20" x2="860" y2="290" stroke="#0e6b34" stroke-width="2" stroke-dasharray="4,4"/>
+          <rect x="868" y="28" width="200" height="36" rx="8" fill="#0e6b34"/>
+          <text x="968" y="51" text-anchor="middle" font-family="Unbounded" font-size="12" font-weight="700" fill="#fff">01.05 · ролаут</text>
+          <g font-family="Raleway" font-size="12" fill="#6a6a6a" font-weight="600">
+            <text x="140" y="285" text-anchor="middle">Нд</text>
+            <text x="300" y="285" text-anchor="middle">Пн</text>
+            <text x="460" y="285" text-anchor="middle">Вт</text>
+            <text x="620" y="285" text-anchor="middle">Ср</text>
+            <text x="780" y="285" text-anchor="middle">Чт</text>
+            <text x="940" y="285" text-anchor="middle" fill="#d10024" font-weight="800">Пт</text>
+            <text x="1100" y="285" text-anchor="middle" fill="#d10024" font-weight="800">Сб</text>
+          </g>
+          <g font-family="Raleway" font-size="10" fill="#6a6a6a">
+            <text x="140" y="302" text-anchor="middle">26.04</text>
+            <text x="300" y="302" text-anchor="middle">27.04</text>
+            <text x="460" y="302" text-anchor="middle">28.04</text>
+            <text x="620" y="302" text-anchor="middle">29.04</text>
+            <text x="780" y="302" text-anchor="middle">30.04</text>
+            <text x="940" y="302" text-anchor="middle">01.05</text>
+            <text x="1100" y="302" text-anchor="middle">02.05</text>
+          </g>
+        </svg>
+        <div class="chart-legend">
+          <span><span class="legend-dot" style="background:#a8b3bf"></span>W17 (19–25.04)</span>
+          <span><span class="legend-dot" style="background:#d10024"></span>W18 (26.04–02.05)</span>
+        </div>
+        <div class="chart-takeaway">
+          <b>Що бачимо:</b> на рівні тижня burn ratio 1.228 — флет до W17 (1.228), товарообіг +0.8% WoW, пенетрація −0.7 п.п. Тижневі KPI без зрушень, денна варіативність — у звичних межах (пік у Чт 1.33, мінімуми у Пт-Сб 1.16). Денний графік фіксуємо як baseline для зіставлення з W19, коли в роботі вже буде розсилка по базі і запрацює моніторинг впливу.
+        </div>
+      </div>
+
+      <div class="chart-card full reveal">
+        <h4>Нараховано і списано бонусів по днях W18</h4>
+        <div class="chart-sub">тис. ₴. Звичайний денний профіль робочого тижня: списання вищі за нарахування, з варіативністю по днях.</div>
+        <svg class="chart-svg" viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg">
+          <defs><pattern id="gd2" width="100" height="40" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 40" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="1"/></pattern></defs>
+          <rect x="60" y="20" width="1120" height="240" fill="url(#gd2)"/>
+          <g font-family="Raleway" font-size="11" fill="#6a6a6a">
+            <text x="55" y="25" text-anchor="end">800</text>
+            <text x="55" y="85" text-anchor="end">600</text>
+            <text x="55" y="145" text-anchor="end">400</text>
+            <text x="55" y="205" text-anchor="end">200</text>
+            <text x="55" y="265" text-anchor="end">0</text>
+          </g>
+          <g>
+            <rect x="115" y="138" width="50" height="122" fill="#0e6b34"/>
+            <rect x="170" y="100" width="50" height="160" fill="#d10024"/>
+            <rect x="275" y="91" width="50" height="169" fill="#0e6b34"/>
+            <rect x="330" y="53" width="50" height="207" fill="#d10024"/>
+            <rect x="435" y="84" width="50" height="176" fill="#0e6b34"/>
+            <rect x="490" y="50" width="50" height="210" fill="#d10024"/>
+            <rect x="595" y="89" width="50" height="171" fill="#0e6b34"/>
+            <rect x="650" y="47" width="50" height="213" fill="#d10024"/>
+            <rect x="755" y="94" width="50" height="166" fill="#0e6b34"/>
+            <rect x="810" y="39" width="50" height="221" fill="#d10024"/>
+            <rect x="915" y="76" width="50" height="184" fill="#0e6b34" stroke="#0a0a0a" stroke-width="2"/>
+            <rect x="970" y="46" width="50" height="214" fill="#d10024" stroke="#0a0a0a" stroke-width="2"/>
+            <rect x="1075" y="109" width="50" height="151" fill="#0e6b34" stroke="#0a0a0a" stroke-width="2"/>
+            <rect x="1130" y="85" width="50" height="175" fill="#d10024" stroke="#0a0a0a" stroke-width="2"/>
+          </g>
+          <line x1="892" y1="20" x2="892" y2="290" stroke="#0e6b34" stroke-width="2" stroke-dasharray="4,4"/>
+          <rect x="900" y="28" width="200" height="32" rx="8" fill="#0e6b34"/>
+          <text x="1000" y="48" text-anchor="middle" font-family="Unbounded" font-size="11" font-weight="700" fill="#fff">01.05 · ролаут</text>
+          <g font-family="Raleway" font-size="12" fill="#6a6a6a" font-weight="600">
+            <text x="170" y="285" text-anchor="middle">Нд 26.04</text>
+            <text x="330" y="285" text-anchor="middle">Пн 27.04</text>
+            <text x="490" y="285" text-anchor="middle">Вт 28.04</text>
+            <text x="650" y="285" text-anchor="middle">Ср 29.04</text>
+            <text x="810" y="285" text-anchor="middle">Чт 30.04</text>
+            <text x="970" y="285" text-anchor="middle" fill="#d10024" font-weight="800">Пт 01.05</text>
+            <text x="1130" y="285" text-anchor="middle" fill="#d10024" font-weight="800">Сб 02.05</text>
+          </g>
+        </svg>
+        <div class="chart-legend">
+          <span><span class="legend-dot" style="background:#0e6b34"></span>Нараховано W18</span>
+          <span><span class="legend-dot" style="background:#d10024"></span>Списано W18</span>
+        </div>
+        <div class="chart-takeaway">
+          <b>Що бачимо:</b> за тиждень нараховано ₴3.80М, списано ₴4.67М — практично як у W17 (₴3.84М / ₴4.72М). Денний профіль типовий для робочого тижня: середина тижня — пік нарахувань і списань, неділя і субота — нижче. Це baseline для оцінки впливу ролауту в W19–W20.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trend">
+  <div class="section-number">04</div>
+  <div class="container">
+    <span class="eyebrow reveal">Тренд з 23.02</span>
+    <h2 class="reveal">12 тижнів — burn ratio падає</h2>
+    <p class="section-lede reveal">23.02.2026 — запуск нового правила списання. За 9 повних тижнів після переходу burn ratio пройшов шлях 1.38 → 1.23.</p>
+
+    <div class="chart-grid">
+      <div class="chart-card reveal">
+        <h4>Burn ratio за тиждень</h4>
+        <div class="chart-sub">Списано / нараховано. Beak-even = 1.0.</div>
+        <svg class="chart-svg" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+          <defs><pattern id="gridA" width="60" height="40" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 40" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="1"/></pattern></defs>
+          <rect x="40" y="20" width="540" height="220" fill="url(#gridA)"/>
+          <g font-family="Raleway" font-size="11" fill="#6a6a6a">
+            <text x="35" y="25" text-anchor="end">1.5</text>
+            <text x="35" y="80" text-anchor="end">1.3</text>
+            <text x="35" y="135" text-anchor="end">1.1</text>
+            <text x="35" y="190" text-anchor="end">0.9</text>
+            <text x="35" y="245" text-anchor="end">0.7</text>
+          </g>
+          <line x1="40" y1="157.5" x2="580" y2="157.5" stroke="#6a6a6a" stroke-width="1" stroke-dasharray="4,4"/>
+          <text x="585" y="161" font-family="Raleway" font-size="10" fill="#6a6a6a">1.0</text>
+          <polyline points="60,184 105,180 150,165 195,55 240,58 285,70 330,75 375,82 420,87 465,86 510,96 555,96" fill="none" stroke="#d10024" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="#d10024">
+            <circle cx="60" cy="184" r="4"/><circle cx="105" cy="180" r="4"/><circle cx="150" cy="165" r="4"/>
+            <circle cx="195" cy="55" r="4"/><circle cx="240" cy="58" r="4"/><circle cx="285" cy="70" r="4"/>
+            <circle cx="330" cy="75" r="4"/><circle cx="375" cy="82" r="4"/><circle cx="420" cy="87" r="4"/>
+            <circle cx="465" cy="86" r="4"/><circle cx="510" cy="96" r="4"/><circle cx="555" cy="96" r="6" stroke="#fff" stroke-width="2"/>
+          </g>
+          <line x1="172.5" y1="20" x2="172.5" y2="240" stroke="#0e6b34" stroke-width="1.5" stroke-dasharray="3,3"/>
+          <text x="178" y="32" font-family="Unbounded" font-size="10" font-weight="700" fill="#0e6b34">23.02 правило</text>
+          <g font-family="Raleway" font-size="10" fill="#6a6a6a">
+            <text x="60" y="262" text-anchor="middle">W7</text><text x="105" y="262" text-anchor="middle">W8</text>
+            <text x="150" y="262" text-anchor="middle">W9</text><text x="195" y="262" text-anchor="middle">W10</text>
+            <text x="240" y="262" text-anchor="middle">W11</text><text x="285" y="262" text-anchor="middle">W12</text>
+            <text x="330" y="262" text-anchor="middle">W13</text><text x="375" y="262" text-anchor="middle">W14</text>
+            <text x="420" y="262" text-anchor="middle">W15</text><text x="465" y="262" text-anchor="middle">W16</text>
+            <text x="510" y="262" text-anchor="middle">W17</text><text x="555" y="262" text-anchor="middle" font-weight="700" fill="#d10024">W18</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="chart-card reveal">
+        <h4>Чистий потік за тиждень</h4>
+        <div class="chart-sub">Нараховано − списано, тис. ₴. Від'ємне = зобов'язання скорочується.</div>
+        <svg class="chart-svg" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+          <defs><pattern id="gridB" width="60" height="44" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 44" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="1"/></pattern></defs>
+          <rect x="40" y="20" width="540" height="220" fill="url(#gridB)"/>
+          <g font-family="Raleway" font-size="11" fill="#6a6a6a">
+            <text x="35" y="25" text-anchor="end">+1000</text>
+            <text x="35" y="64" text-anchor="end">+500</text>
+            <text x="35" y="108" text-anchor="end">0</text>
+            <text x="35" y="152" text-anchor="end">−500</text>
+            <text x="35" y="196" text-anchor="end">−1000</text>
+            <text x="35" y="240" text-anchor="end">−1500</text>
+          </g>
+          <line x1="40" y1="108" x2="580" y2="108" stroke="#0a0a0a" stroke-width="1.5"/>
+          <g>
+            <rect x="46" y="60" width="28" height="48" fill="#1a4a78"/>
+            <rect x="91" y="69" width="28" height="39" fill="#1a4a78"/>
+            <rect x="136" y="100" width="28" height="8" fill="#1a4a78"/>
+            <rect x="181" y="108" width="28" height="126" fill="#d10024"/>
+            <rect x="226" y="108" width="28" height="129" fill="#d10024"/>
+            <rect x="271" y="108" width="28" height="115" fill="#d10024"/>
+            <rect x="316" y="108" width="28" height="101" fill="#d10024"/>
+            <rect x="361" y="108" width="28" height="89" fill="#d10024"/>
+            <rect x="406" y="108" width="28" height="85" fill="#d10024"/>
+            <rect x="451" y="108" width="28" height="90" fill="#d10024"/>
+            <rect x="496" y="108" width="28" height="77" fill="#d10024"/>
+            <rect x="541" y="108" width="28" height="76" fill="#d10024" stroke="#0a0a0a" stroke-width="2"/>
+          </g>
+          <g font-family="Raleway" font-size="10" fill="#6a6a6a">
+            <text x="60" y="262" text-anchor="middle">W7</text><text x="105" y="262" text-anchor="middle">W8</text>
+            <text x="150" y="262" text-anchor="middle">W9</text><text x="195" y="262" text-anchor="middle">W10</text>
+            <text x="240" y="262" text-anchor="middle">W11</text><text x="285" y="262" text-anchor="middle">W12</text>
+            <text x="330" y="262" text-anchor="middle">W13</text><text x="375" y="262" text-anchor="middle">W14</text>
+            <text x="420" y="262" text-anchor="middle">W15</text><text x="465" y="262" text-anchor="middle">W16</text>
+            <text x="510" y="262" text-anchor="middle">W17</text><text x="555" y="262" text-anchor="middle" font-weight="700" fill="#d10024">W18</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="signals" class="cream">
+  <div class="section-number">05</div>
+  <div class="container">
+    <span class="eyebrow reveal">Сигнали і ризики</span>
+    <h2 class="reveal tight">Що тримаємо на радарі</h2>
+
+    <div class="signals-grid stagger">
+      <div class="signal-card work reveal">
+        <div class="signal-eyebrow">В роботі</div>
+        <h4>Список 346 SKU — запущено 01.05</h4>
+        <p>З W19 розпочинаємо системний моніторинг впливу на burn, списання, пенетрацію.</p>
+        <span class="signal-status live">live</span>
+
+        <h4>Лендинг зі списком — опубліковано на сайті</h4>
+        <p>Сторінка зі списком доступна публічно. Сьогодні запускаємо розсилку по базі клієнтів.</p>
+        <span class="signal-status live">live</span>
+
+        <h4>Внесення змін у правила програми</h4>
+        <p>Оновлюємо текст правил ПЛ під нові механіки.</p>
+        <span class="signal-status">в роботі</span>
+      </div>
+
+      <div class="signal-card reveal">
+        <div class="signal-eyebrow">На радарі</div>
+        <h4>Активна база — стабілізувалася</h4>
+        <p>Уперше за 4 тижні немає WoW-зниження: 1.729М клієнтів, рівно з W17. Нові картки 32.2 тис. (+1.2% WoW) — додатний сигнал, але темп нижчий за лютий-березень (~33–34 тис./тиждень).</p>
+
+        <h4>Пенетрація — −0.7 п.п.</h4>
+        <p>49.96% за W18 проти 50.65% за W17. У межах усталеного коридору 49.7–51.2%, але слідкуємо, чи не вийде з нього у W19.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="#top" class="logo">
+    <span class="logo-img"><svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38.0894 12.226L34.751 15.4732C34.6702 15.7838 35.9832 16.6007 35.961 16.9716L33.5252 22.4905L35.9563 23.4778L39.3057 16.0278C42.9412 35.2012 19.7471 47.5886 5.9136 33.8209C9.36604 30.6688 12.87 27.3708 15.6354 23.5793C17.7638 20.6617 20.0696 16.7608 18.4769 13.0865C16.7361 9.07225 11.8098 9.19507 8.39457 10.8654C4.77414 12.6372 0.231373 18.0912 2.35022 22.2901C4.14816 25.8526 8.89615 25.2465 11.7646 23.4351C12.2971 23.0991 12.7305 22.6458 13.2907 22.3764C10.5507 25.8083 7.47382 28.9596 4.1648 31.8439C-6.57367 17.863 4.87715 -1.88249 22.2963 0.144432C29.4824 0.9804 35.3184 5.70303 38.0886 12.2252L38.0894 12.226ZM25.5379 24.4683L30.316 13.7664L30.2598 13.3987C29.7954 13.1911 28.7606 12.0294 28.3723 11.9328C28.0886 11.8622 24.6837 15.5746 24.1774 16.0048C24.1116 16.2552 24.66 16.5563 24.8176 16.7101C24.9642 16.8527 25.6885 17.5334 25.6782 17.6483L23.1227 23.3685L25.5379 24.4683ZM33.3628 18.527C33.4246 18.42 33.3192 18.3083 33.2709 18.2204C33.1258 17.9589 32.4333 17.0445 32.2217 16.8361C32.1702 16.7853 32.1512 16.6998 32.045 16.7109L30.0965 18.1245C30.0759 18.2608 31.3327 19.8725 31.4444 19.8931L33.3628 18.5262V18.527ZM20.8327 20.8075C20.9072 20.8503 20.9793 20.8123 21.049 20.779C21.1996 20.7077 22.8493 19.4398 22.8684 19.3249L21.5427 17.5492L19.6124 19.046L20.8327 20.8083V20.8075Z" fill="#ED1A3B"/>
+<path d="M5.91382 33.8162C5.1761 33.0817 4.81557 32.6871 4.16422 31.8392C7.47324 28.9542 10.5501 25.8036 13.2902 22.3718C12.73 22.642 12.2965 23.0945 11.764 23.4304C8.89558 25.2418 4.14679 25.8472 2.34965 22.2854C0.230798 18.0866 4.77357 12.6326 8.39479 10.8616C11.81 9.19124 16.7371 9.06843 18.4772 13.0827C20.0699 16.757 17.764 20.6579 15.6356 23.5754C12.8702 27.3662 9.36547 30.6641 5.91382 33.817V33.8162ZM12.4399 12.3957C9.64122 12.6112 6.93521 14.5969 5.50177 16.9416C2.49545 21.8615 6.52475 23.7315 10.577 21.1032C11.9629 20.2038 13.0279 18.8996 13.9502 17.5501C14.203 17.4749 15.2363 18.2641 15.5723 18.3497C15.6713 18.375 15.6848 18.3956 15.764 18.3061C15.8377 18.2229 16.096 17.4828 16.1452 17.3164C17.0215 14.3481 15.6483 12.1484 12.4399 12.3957Z" fill="#FFFDFD"/>
+<path d="M39.3039 16.0284L35.9545 23.4785L33.5234 22.4911L35.9592 16.9722C35.9806 16.6013 34.6676 15.7836 34.7493 15.4738L38.0876 12.2266C38.6629 13.5815 39.021 14.5316 39.3047 16.0284H39.3039Z" fill="#FFFDFD"/>
+<path d="M25.5363 24.4701L23.1211 23.3703L25.6766 17.6501C25.6876 17.5352 24.9634 16.8545 24.816 16.7119C24.6583 16.5582 24.11 16.2571 24.1758 16.0067C24.6821 15.5756 28.087 11.8641 28.3707 11.9346C28.7597 12.0313 29.7938 13.1929 30.2581 13.4005L30.3144 13.7682L25.5363 24.4701Z" fill="#FFFDFD"/>
+<path d="M20.8336 20.8099L19.6133 19.0476L21.5435 17.5508L22.8692 19.3265C22.8502 19.4414 21.2004 20.7092 21.0499 20.7805C20.9802 20.8138 20.908 20.8519 20.8336 20.8091V20.8099Z" fill="#FBFBFB"/>
+<path d="M33.368 18.5273L31.4497 19.8941C31.3379 19.8728 30.0812 18.2618 30.1018 18.1255L32.0503 16.7119C32.1565 16.7008 32.1755 16.7864 32.227 16.8371C32.4378 17.0455 33.1303 17.9599 33.2761 18.2214C33.3253 18.3094 33.4298 18.4211 33.368 18.5281V18.5273Z" fill="#FBFBFB"/>
+<path d="M12.4372 12.4018C15.6456 12.1545 17.0188 14.3542 16.1424 17.3225C16.0933 17.4889 15.835 18.229 15.7613 18.3122C15.682 18.4017 15.6686 18.3811 15.5695 18.3558C15.2335 18.2702 14.2003 17.481 13.9475 17.5562C13.0243 18.9057 11.9602 20.2099 10.5743 21.1093C6.522 23.7384 2.49269 21.8676 5.49902 16.9477C6.93245 14.6022 9.63846 12.6173 12.4372 12.4018Z" fill="#ED1A3B"/>
+<path d="M53.5492 18.245H56.9829V17.5532C56.9829 17.0663 56.7523 16.6563 56.3167 16.2976C55.8554 15.9388 55.3173 15.7595 54.6511 15.7595C54.0105 15.7595 53.4724 15.9388 53.0368 16.2463C52.6011 16.5794 52.3705 16.9894 52.3449 17.4507H49.3468C49.4493 16.1182 50.0387 14.9907 51.0637 14.1195C52.0886 13.2483 53.3699 12.8127 54.9073 12.8127C56.4448 12.8127 57.7004 13.2739 58.7254 14.1451C59.7503 15.0164 60.2628 16.1438 60.2628 17.4763V22.5243C60.2628 22.8062 60.3397 23.0368 60.5191 23.2162C60.6728 23.4212 60.9034 23.498 61.1597 23.498C61.3647 23.498 61.5697 23.4468 61.8003 23.293V25.548C61.2366 25.9067 60.5959 26.0861 59.8785 26.0861C58.6485 26.0861 57.7773 25.5992 57.2904 24.6255C56.291 25.6505 55.0098 26.163 53.4467 26.163C52.1143 26.163 51.0124 25.8042 50.1412 25.0355C49.27 24.2668 48.8344 23.293 48.8344 22.0631C48.8344 20.8843 49.2443 19.9619 50.0899 19.27C50.9356 18.6038 52.0886 18.245 53.5492 18.245ZM52.1143 21.9349C52.1143 22.3193 52.268 22.6268 52.6268 22.883C52.9599 23.1393 53.3955 23.2418 53.9592 23.2418C54.728 23.2418 55.4198 23.0112 56.0348 22.4987C56.6498 22.0118 56.9573 21.3968 56.9829 20.6537H54.1386C53.5236 20.6537 53.0368 20.7818 52.678 21.0125C52.2936 21.2431 52.1143 21.5506 52.1143 21.9349ZM63.9167 13.1202H75.8064V25.8555H72.5265V15.7082H67.1966V25.8555H63.9167V13.1202ZM89.6634 15.7082H85.4354V25.8555H82.1555V15.7082H77.9531V13.1202H89.6634V15.7082ZM97.3585 12.8127C99.0754 12.8127 100.485 13.3508 101.587 14.427C102.663 15.5032 103.227 16.8613 103.227 18.5013C103.227 19.1675 103.098 19.8594 102.842 20.5256H94.1299C94.3092 21.3712 94.6936 22.0374 95.3086 22.5243C95.8979 23.0368 96.6667 23.2674 97.5891 23.2674C98.3579 23.2674 98.9985 23.1137 99.511 22.7549C100.023 22.4218 100.305 21.9862 100.357 21.4737H103.278C103.15 22.8318 102.535 23.9336 101.407 24.8049C100.28 25.6761 98.896 26.1117 97.2816 26.1117C95.3598 26.1117 93.7967 25.4967 92.618 24.2411C91.4393 23.0112 90.8499 21.4225 90.8499 19.5006C90.8499 17.5532 91.4649 15.9645 92.6949 14.7089C93.9249 13.4533 95.4623 12.8127 97.3585 12.8127ZM94.258 18.0144H100.203C100.049 17.2969 99.7416 16.7332 99.2547 16.2976C98.7422 15.862 98.1273 15.6313 97.3841 15.6313C96.6154 15.6313 95.9748 15.862 95.4367 16.2719C94.873 16.7076 94.4886 17.2969 94.258 18.0144ZM105.88 13.1202H109.16V18.04H110.057C110.672 18.04 111.133 17.7838 111.441 17.2457L113.132 14.6576C113.747 13.5558 114.67 12.992 115.9 12.992H117.283V15.5801H117.181C116.515 15.5801 116.028 15.862 115.72 16.4001L113.85 19.2956L116.053 22.5755C116.361 23.1393 116.848 23.3955 117.514 23.3955H117.591V25.9836H116.31C115.72 25.9836 115.182 25.8555 114.67 25.548C114.157 25.2661 113.747 24.8561 113.465 24.3436L111.441 21.4481C111.082 20.91 110.621 20.6281 110.006 20.6281H109.16V25.8555H105.88V13.1202ZM124.016 18.245H127.45V17.5532C127.45 17.0663 127.219 16.6563 126.784 16.2976C126.322 15.9388 125.784 15.7595 125.118 15.7595C124.478 15.7595 123.939 15.9388 123.504 16.2463C123.068 16.5794 122.838 16.9894 122.812 17.4507H119.814C119.916 16.1182 120.506 14.9907 121.531 14.1195C122.556 13.2483 123.837 12.8127 125.374 12.8127C126.912 12.8127 128.167 13.2739 129.192 14.1451C130.217 15.0164 130.73 16.1438 130.73 17.4763V22.5243C130.73 22.8062 130.807 23.0368 130.986 23.2162C131.14 23.4212 131.37 23.498 131.627 23.498C131.832 23.498 132.037 23.4468 132.267 23.293V25.548C131.704 25.9067 131.063 26.0861 130.346 26.0861C129.116 26.0861 128.244 25.5992 127.757 24.6255C126.758 25.6505 125.477 26.163 123.914 26.163C122.581 26.163 121.479 25.8042 120.608 25.0355C119.737 24.2668 119.301 23.293 119.301 22.0631C119.301 20.8843 119.711 19.9619 120.557 19.27C121.403 18.6038 122.556 18.245 124.016 18.245ZM122.581 21.9349C122.581 22.3193 122.735 22.6268 123.094 22.883C123.427 23.1393 123.863 23.2418 124.426 23.2418C125.195 23.2418 125.887 23.0112 126.502 22.4987C127.117 22.0118 127.424 21.3968 127.45 20.6537H124.606C123.991 20.6537 123.504 20.7818 123.145 21.0125C122.761 21.2431 122.581 21.5506 122.581 21.9349Z" fill="black"/>
+</svg></span>
+    <span class="logo-text">Тижневий звіт<br>програма лояльності</span>
+  </a>
+  <div>W18 · 26.04 — 02.05.2026 · підготовлено 03.05</div>
+</footer>
+
+<script>
+const progress = document.getElementById('progress');
+const nav = document.getElementById('topnav');
+let lastScroll = 0;
+function updateProgress() {
+  const h = document.documentElement;
+  const scrolled = h.scrollTop || document.body.scrollTop;
+  const total = h.scrollHeight - h.clientHeight;
+  const pct = (scrolled / total) * 100;
+  progress.style.width = pct + '%';
+  if (scrolled > 100 && scrolled > lastScroll) nav.classList.add('hide');
+  else nav.classList.remove('hide');
+  lastScroll = scrolled;
+}
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    requestAnimationFrame(() => { updateProgress(); ticking = false; });
+    ticking = true;
+  }
+}, { passive: true });
+
+const reveals = document.querySelectorAll('.reveal');
+const staggers = document.querySelectorAll('.stagger');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+  reveals.forEach(el => io.observe(el));
+  staggers.forEach(el => io.observe(el));
+} else {
+  reveals.forEach(el => el.classList.add('in'));
+  staggers.forEach(el => el.classList.add('in'));
+}
+
+const counters = document.querySelectorAll('[data-counter]');
+const counterIO = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseFloat(el.dataset.counter);
+      const prefix = el.dataset.prefix || '';
+      const suffix = el.dataset.suffix || '';
+      const duration = 1800;
+      const start = performance.now();
+      const decimals = (target % 1 === 0) ? 0 : 2;
+      function tick(now) {
+        const elapsed = now - start;
+        const p = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const current = target * eased;
+        el.textContent = prefix + current.toFixed(decimals) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = prefix + target.toFixed(decimals) + suffix;
+      }
+      requestAnimationFrame(tick);
+      counterIO.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+counters.forEach(el => counterIO.observe(el));
+</script>
+
+</body>
+</html>
